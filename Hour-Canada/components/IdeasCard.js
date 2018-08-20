@@ -21,6 +21,7 @@ const styles = {
     height: 120,  
     borderWidth: 1,
     borderRadius: 10,
+    borderColor: 'white'
   },
   ideasText: {
     fontSize: 20,

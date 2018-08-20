@@ -53,7 +53,7 @@ export default class Popup extends Component {
     return (
       <View styles={styles.containerStyle}>
         <View style={{backgroundColor: '#F05C4B', paddingTop: 30, paddingBottom: 10}}>
-          <Image source={require('../assets/images/hourglass.png')} style={{height: 60, width: 60, alignSelf: 'center',}} />
+          <Image source={require('../assets/images/hourglass.png')} style={{height: 30, width: 30, alignSelf: 'center',}} />
         </View>
 
         <View style={{flexDirection: 'row', paddingVertical: 5}}>

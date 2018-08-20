@@ -20,7 +20,7 @@ export default class HomeScreen extends React.Component {
   render() {
 
     return (
-      <ScrollView>
+      <ScrollView style={{backgroundColor: '#fff'}}>
         <View style={{backgroundColor: '#F05C4B', paddingTop: 30, paddingBottom: 10}}>
           <Image source={require('../assets/images/hourglass.png')} style={{height: 30, width: 30, alignSelf: 'center',}} />
         </View>
