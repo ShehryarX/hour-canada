@@ -1,12 +1,13 @@
 import React from 'react';
 import {
   View,
-  Text
+  Text,
+  TouchableOpacity
 } from 'react-native';
 
 const TutorWantedCard = (props) => {
   return (
-    <View style={styles.containerStyle}>
+    <TouchableOpacity style={styles.containerStyle}>
       <View style={styles.headerContainerStyle}>
         <View style={{alignSelf: 'flex-start', justifyContent: 'flex-start', flex: 2}}>
           <Text style={styles.titleTextStyle}>{props.title}</Text>
@@ -27,7 +28,7 @@ const TutorWantedCard = (props) => {
           Posted by: {props.poster}
         </Text>
       </View>
-    </View>
+    </TouchableOpacity>
   )
 };
 
