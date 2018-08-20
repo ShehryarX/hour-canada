@@ -37,7 +37,7 @@ const styles = {
     paddingHorizontal: 10,
   },
   headerContainerStyle: {
-    paddingTop: 20,
+    paddingVertical: 15,
     flexDirection: 'row',
   },
   titleTextStyle: {

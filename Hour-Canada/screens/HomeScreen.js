@@ -19,20 +19,27 @@ export default class HomeScreen extends React.Component {
 
   render() {
     return (
-      <View style={styles.container}>
-        <ScrollView>
-          <ScrollView horizontal={true} showsHorizontalScrollIndicator={false} style={styles.ideasViewStyle}>
-            <IdeasCard image={require('../assets/images/categories/general.png')} />
-            <IdeasCard image={require('../assets/images/categories/education.png')} />
-            <IdeasCard image={require('../assets/images/categories/events.png')} />
-            <IdeasCard image={require('../assets/images/categories/home.png')} />
-            <IdeasCard image={require('../assets/images/categories/sports.png')} />
+      <View>
+        <View style={{backgroundColor: '#F05C4B', paddingTop: 30, paddingBottom: 10}}>
+          <Image source={require('../assets/images/hourglass.png')} style={{height: 60, width: 60, alignSelf: 'center',}} />
+        </View>
+        <View style={styles.container}>
+          <ScrollView>
+            <ScrollView horizontal={true} showsHorizontalScrollIndicator={false} style={styles.ideasViewStyle}>
+              <IdeasCard image={require('../assets/images/categories/general.png')} />
+              <IdeasCard image={require('../assets/images/categories/education.png')} />
+              <IdeasCard image={require('../assets/images/categories/events.png')} />
+              <IdeasCard image={require('../assets/images/categories/home.png')} />
+              <IdeasCard image={require('../assets/images/categories/sports.png')} />
+            </ScrollView>
           </ScrollView>
-        </ScrollView>
 
-        <TutorWantedCard />
+          <TutorWantedCard />
 
-        <TopContributer />
+          <View style={{paddingTop: 20}}>
+            <TopContributer />
+          </View>
+        </View>
       </View>
     );
   }
@@ -40,11 +47,12 @@ export default class HomeScreen extends React.Component {
 
 const styles = {
   container: {
-    paddingTop: 30,
-    paddingHorizontal: 10,
+    paddingTop: 0,
+    paddingHorizontal: 5,
+    backgroundColor: 'white',
   },
   ideasViewStyle: {
-    backgroundColor: '#fff',
-    marginVertical: 20,
+    backgroundColor: 'white',
+    marginVertical: 10,
   }
 }

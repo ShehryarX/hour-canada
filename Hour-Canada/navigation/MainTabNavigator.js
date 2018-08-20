@@ -15,13 +15,10 @@ HomeStack.navigationOptions = {
   tabBarIcon: ({ focused }) => (
     <TabBarIcon
       focused={focused}
-      name={
-        Platform.OS === 'ios'
-          ? `ios-information-circle${focused ? '' : '-outline'}`
-          : 'md-information-circle'
-      }
+      name={`ios-home${focused ? '' : '-outline'}`}
     />
   ),
+  tabBarOptions: { activeTintColor:'red', tintColor: 'red', inactiveTintColor: 'red'}
 };
 
 const LinksStack = createStackNavigator({
@@ -33,9 +30,10 @@ LinksStack.navigationOptions = {
   tabBarIcon: ({ focused }) => (
     <TabBarIcon
       focused={focused}
-      name={Platform.OS === 'ios' ? `ios-link${focused ? '' : '-outline'}` : 'md-link'}
+      name={`ios-trophy${focused ? '' : '-outline'}`}
     />
   ),
+  tabBarOptions: { activeTintColor:'red', tintColor: 'red', inactiveTintColor: 'red'}
 };
 
 const SettingsStack = createStackNavigator({
@@ -47,9 +45,10 @@ SettingsStack.navigationOptions = {
   tabBarIcon: ({ focused }) => (
     <TabBarIcon
       focused={focused}
-      name={Platform.OS === 'ios' ? `ios-options${focused ? '' : '-outline'}` : 'md-options'}
+      name={`ios-person${focused ? '' : '-outline'}`}
     />
   ),
+  tabBarOptions: { activeTintColor:'red', tintColor: 'red', inactiveTintColor: 'red'}
 };
 
 export default createBottomTabNavigator({

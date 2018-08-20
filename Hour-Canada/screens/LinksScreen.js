@@ -1,12 +1,10 @@
 import React from 'react';
-import { ScrollView, StyleSheet, View, Text  } from 'react-native';
+import { ScrollView, StyleSheet, View, Text, Image  } from 'react-native';
 import { ExpoLinksView } from '@expo/samples';
 
-export default class LinksScreen extends React.Component {
-  static navigationOptions = {
-    title: 'Links',
-  };
 
+
+export default class LinksScreen extends React.Component {
   constructor() {
     super();
   }
@@ -14,6 +12,10 @@ export default class LinksScreen extends React.Component {
   render() {
     return (
       <View styles={styles.container}>
+        <View style={{backgroundColor: '#F05C4B', paddingTop: 30, paddingBottom: 10}}>
+          <Image source={require('../assets/images/hourglass.png')} style={{height: 60, width: 60, alignSelf: 'center',}} />
+        </View>
+
         <Text>Hello</Text>
       </View>
     );
@@ -22,8 +24,6 @@ export default class LinksScreen extends React.Component {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    paddingTop: 15,
-    backgroundColor: '#fff',
+    backgroundColor: 'white'
   },
 });
