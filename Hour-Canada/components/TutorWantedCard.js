@@ -17,8 +17,8 @@ const TutorWantedCard = (props) => {
       </View>
 
       <View style={styles.bodyStyle}>
-        <Text>
-          Lorem ipsum your mom. Lorem ipsum your mom. Lorem ipsum your mom. Lorem ipsum your mom. 
+        <Text style={{fontFamily: 'raleway-bold'}}>
+        Lorem ipsum your mom. Lorem ipsum your mom. Lorem ipsum your mom. Lorem ipsum your mom. 
           Lorem ipsum your mom. Lorem ipsum your mom. Lorem ipsum your mom. Lorem ipsum your mom. 
         </Text>
       </View>
@@ -42,6 +42,7 @@ const styles = {
   },
   titleTextStyle: {
     fontSize: 32,
+    fontFamily: 'raleway-bold',
   },
   timeStyle: {
   },
