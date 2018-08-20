@@ -4,9 +4,9 @@ import {
   Image
 } from 'react-native';
 
-const IdeasCard = ({image}) => {
+const IdeasCard = ({image, navigation}) => {
   return (
-    <TouchableOpacity style={styles.ideasContainer}>
+    <TouchableOpacity style={styles.ideasContainer} onPress={() => navigation.navigate("Popup")}>
       <Image source={image} style={styles.imageStyle} />
     </TouchableOpacity>
   );

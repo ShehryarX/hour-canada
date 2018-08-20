@@ -10,11 +10,11 @@ const TopContributer = (props) => {
     <View style={styles.containerStyle}>
       <Text style={styles.titleStyle}>TOP CONTRIBUTER</Text>
 
-      <View style={{flexDirection: 'row'}}>
+      <View style={{flexDirection: 'row', alignItems: 'center'}}>
         <Image source={require('../assets/images/shehryar_headshot.jpg')} style={styles.imageStyle} />
         <View style={styles.contributerInfo}>
-          <Text style={{color: 'white', fontSize: 32}}>SHEHRYAR ASSAD</Text>
-          <Text style={{color: 'white', fontSize: 16,}}>941 hours</Text>
+          <Text style={{color: 'white', fontSize: 32, fontFamily: 'raleway-bold'}}>SHEHRYAR ASSAD</Text>
+          <Text style={{color: 'white', fontSize: 16, fontFamily: 'raleway-bold'}}>941 hours</Text>
           <Text style={{color: 'white', fontSize: 16, paddingTop: 3}}>ENGLISH, URDU, HINDI</Text>
         </View>
       </View>
@@ -32,16 +32,18 @@ const styles = {
   titleStyle: {
     color: '#fff',
     fontWeight: 'bold',
-    fontSize: 16
+    fontSize: 16,
+    fontFamily: 'raleway-bold',
+    paddingBottom: 5
   },
   imageStyle: {
     height: 100,
     width: 100,
-    borderRadius: 100,
-    flex: 1
+    borderRadius: 50,
+    flex: 2
   },
   contributerInfo: {
-    flex: 3,
+    flex: 5,
     paddingLeft: 20,
   }
 }

@@ -1,10 +1,37 @@
 import React from 'react';
-import { createSwitchNavigator } from 'react-navigation';
-
+import {
+	createSwitchNavigator,
+	createStackNavigator
+} from "react-navigation";
 import MainTabNavigator from './MainTabNavigator';
+import Login from '../screens/Login';
+import SignUp from '../screens/SignUp';
+import Popup from '../screens/Popup';
 
-export default createSwitchNavigator({
-  // You could add another route here for authentication.
-  // Read more at https://reactnavigation.org/docs/en/auth-flow.html
-  Main: MainTabNavigator,
-});
+
+const AuthStack = createStackNavigator({
+	SignIn: Login,
+	SignUp: SignUp,
+})
+
+const MainStack = createStackNavigator(
+	{
+		Main: MainTabNavigator,
+		Popup: Popup
+	},
+	{
+		initialRouteName: "Main",
+		mode: "modal",
+	    headerMode: "none"
+	}
+)
+
+export default createSwitchNavigator(
+	{
+		Auth: AuthStack,
+		Main: MainStack
+	},
+	{
+		initialRouteName: "Auth"
+	}
+)
