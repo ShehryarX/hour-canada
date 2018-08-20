@@ -34,18 +34,16 @@ export default class HomeScreen extends React.Component {
               <IdeasCard navigation={this.props.navigation} title='Sports' image={require('../assets/images/categories/sports.png')} />
             </ScrollView>   
           </ScrollView>
-
-          <TutorWantedCard title="Tutors Wanted" time="50 mins ago" description="Looking for a tutor beast at math and physics (like Shehryar) for my son's upcoming SAT test." poster="Shehryar Assad"/>
-
+          
+          <TutorWantedCard title="Tutors Wanted" time="8 mins ago" description="Looking for a tutor beast at math and physics (like Shehryar) for my son's upcoming SAT test." poster="Shehryar Assad"/>
           <View style={{paddingTop: 20}}>
             <TopContributer />
           </View>
-
-          <TutorWantedCard title="Blue Jays Game" time="10 mins ago" description="Need a few volunteers to help with the baseball game." poster="John Smith"/>
-
+          <TutorWantedCard title="Blue Jays Game" time="1 hour ago" description="Need a few volunteers to help with the baseball game." poster="John Smith"/>
+          <TutorWantedCard title="Community Cleanup" time="2 hour ago" description="Need volunteers to help cleanup Sunnybrook park on the weekend." poster="John Cena"/>
+          <TutorWantedCard title="Computer Repair" time="2 hour ago" description="I'd like a computer repairman to help me diagnose my virus." poster="Andrew Jones"/>
+          <TutorWantedCard title="Graphic Design" time="3 hour ago" description="Need a skilled graphic designer to help me make a poster for my event." poster="Moma Kithy"/>
           <TutorWantedCard title="Hack the Barriers" time="5 hours ago" description="Need help with setup and clean up for the event." poster="John Smith"/>
-
-
         </View>
       </ScrollView>
     );

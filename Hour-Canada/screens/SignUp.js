@@ -22,6 +22,10 @@ export default class Signup extends React.Component {
         skills: ""
     };
 
+    static navigationOptions = {
+        header: null,
+      };
+
 	render() {
 		return(
 
@@ -167,7 +171,7 @@ export default class Signup extends React.Component {
                     <TextInput placeholder="Languages" />
                     <TextInput placeholder="Skills" /> */}
 
-                    <TouchableOpacity onPress={this._signInAsync} style={{
+                    <TouchableOpacity onPress={() => this.props.navigation.navigate('Main')} style={{
                         marginTop: 100,
                         paddingHorizontal: 100,
                         paddingVertical: 10,
