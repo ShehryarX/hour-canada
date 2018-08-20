@@ -1,1 +1,1 @@
-# hour-canada
+# Hour Canada
