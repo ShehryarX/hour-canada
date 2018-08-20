@@ -9,6 +9,8 @@ import {
 } from 'react-native';
 
 import IdeasCard from '../components/IdeasCard';
+import TutorWantedCard from '../components/TutorWantedCard';
+import TopContributer from '../components/TopContributer';
 
 export default class HomeScreen extends React.Component {
   static navigationOptions = {
@@ -19,13 +21,18 @@ export default class HomeScreen extends React.Component {
     return (
       <View style={styles.container}>
         <ScrollView>
-          <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
-            <IdeasCard />
-            <IdeasCard />
-            <IdeasCard />
-            <IdeasCard />
+          <ScrollView horizontal={true} showsHorizontalScrollIndicator={false} style={styles.ideasViewStyle}>
+            <IdeasCard image={require('../assets/images/categories/general.png')} />
+            <IdeasCard image={require('../assets/images/categories/education.png')} />
+            <IdeasCard image={require('../assets/images/categories/events.png')} />
+            <IdeasCard image={require('../assets/images/categories/home.png')} />
+            <IdeasCard image={require('../assets/images/categories/sports.png')} />
           </ScrollView>
         </ScrollView>
+
+        <TutorWantedCard />
+
+        <TopContributer />
       </View>
     );
   }
@@ -33,9 +40,11 @@ export default class HomeScreen extends React.Component {
 
 const styles = {
   container: {
-    flex: 1,
     paddingTop: 30,
     paddingHorizontal: 10,
-    backgroundColor: '#fff'
   },
+  ideasViewStyle: {
+    backgroundColor: '#fff',
+    marginVertical: 20,
+  }
 }

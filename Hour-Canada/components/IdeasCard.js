@@ -4,11 +4,13 @@ import {
   Image
 } from 'react-native';
 
-const IdeasCard = ({imagePath}) => (
-  <TouchableOpacity style={styles.ideasContainer}>
-    <Image source={require('../img/plumbing.jpg')} style={styles.imageStyle} />
-  </TouchableOpacity>
-)
+const IdeasCard = ({image}) => {
+  return (
+    <TouchableOpacity style={styles.ideasContainer}>
+      <Image source={image} style={styles.imageStyle} />
+    </TouchableOpacity>
+  );
+}
 
 const styles = {
   ideasContainer: {
