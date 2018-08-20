@@ -2,9 +2,6 @@ import React from 'react';
 import { Platform, StatusBar, StyleSheet, View } from 'react-native';
 import { AppLoading, Asset, Font, Icon } from 'expo';
 import AppNavigator from './navigation/AppNavigator';
-import Login from './screens/Login';
-import Popup from './screens/Popup';
-import SignUp from './screens/SignUp';
 
 export default class App extends React.Component {
   state = {
